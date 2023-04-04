@@ -3,7 +3,7 @@
         'name' => 'bashdef/yp_server',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4840fc8f46263809b4372715bad20721b2a4493c',
+        'reference' => '8b675eb1643368217c29df3d6a5aa1d9d5897034',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'bashdef/yp_server' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4840fc8f46263809b4372715bad20721b2a4493c',
+            'reference' => '8b675eb1643368217c29df3d6a5aa1d9d5897034',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -135,6 +135,17 @@
             'install_path' => __DIR__ . '/../nesbot/carbon',
             'aliases' => array(
                 0 => '2.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'nikic/fast-route' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '34128a32009e1b41c4615bcd7d4c39968931e9ea',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nikic/fast-route',
+            'aliases' => array(
+                0 => '2.0.x-dev',
             ),
             'dev_requirement' => false,
         ),
