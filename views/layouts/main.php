@@ -14,11 +14,21 @@
       <ul class='nav'>
          <a href="<?= app()->route->getUrl('/hello')?>" class='nav-link'>Главная</a>
          <?php
+         if($_SESSION['role_id'] === 1):
+         ?>
+            <a href="<?= app()->route->getUrl('/signup')?>" class='nav-link'>Регистрация оператора</a>
+         <?php 
+         endif;
+         ?>
+         <?php
          if(!app()->auth::check()): ?>
             <a href="<?= app()->route->getUrl('/login')?>" class='nav-link'>Вход</a>
             <a href="<?= app()->route->getUrl('/signup')?>" class='nav-link'>Регистрация</a>
          <?php
          else: ?>
+            <a href="<?= app()->route->getUrl('/subscribers')?>" class='nav-link'>Абоненты</a>
+            <a href="<?= app()->route->getUrl('/subunits')?>" class='nav-link'>Подразделения</a>
+            <a href="<?= app()->route->getUrl('/rooms')?>" class='nav-link'>Помещения</a>
             <a href="<?= app()->route->getUrl('/logout')?>" class='nav-link'>Выход(<?= app()->auth::user()->name ?>)</a>
          <?php
          endif;

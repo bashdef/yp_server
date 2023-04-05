@@ -5,6 +5,9 @@ use Src\View;
 use Src\Request;
 use Model\User;
 use Src\Auth\Auth;
+use Model\Room;
+use Model\Subunit;
+use Model\Subscribers;
 class Site
 {
     public function index(Request $request): string
@@ -40,5 +43,20 @@ class Site
     {
         Auth::logout();
         app()->route->redirect('/hello');
+    }
+    public function rooms(): string
+    {
+        $rooms = Room::all();
+        return (new View())->render('site.rooms', ['rooms' => $rooms]);
+    }
+    public function subunits(): string
+    {
+        $subunits = Subunit::all();
+        return (new View())->render('site.subunits', ['subunits' => $subunits]);
+    }
+    public function subscribers()
+    {
+        $subscribers = Subscribers::all();
+        return (new View())->render('site.subscribers', ['subscribers' => $subscribers]);
     }
 }
