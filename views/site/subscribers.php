@@ -26,4 +26,5 @@
       ?>
     </tbody>
   </table>
+  <button class="btn btn-primary" style='margin-right: 775px;'>Добавить абонента</button>
 </div>

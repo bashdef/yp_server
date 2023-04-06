@@ -24,4 +24,5 @@
       ?>
     </tbody>
   </table>
+  <button class="btn btn-primary" style='margin-right: 755px;'>Добавить помещение</button>
 </div>

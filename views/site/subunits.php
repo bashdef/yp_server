@@ -20,4 +20,5 @@
       ?>
     </tbody>
   </table>
+  <button class="btn btn-primary" style='margin-right: 725px;'>Добавить подразделение</button>
 </div>

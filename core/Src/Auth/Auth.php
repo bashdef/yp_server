@@ -56,7 +56,7 @@ class Auth
    public static function logout(): bool
    {
        Session::clear('id');
+       Session::clear('role_id');   
        return true;
    }
-
 }

@@ -40,9 +40,6 @@
                   <li class="nav-item">
                      <a href="<?= app()->route->getUrl('/login')?>" class='nav-link'>Вход</a>
                   </li>
-                  <li class="nav-item">
-                     <a href="<?= app()->route->getUrl('/signup')?>" class='nav-link'>Регистрация</a>
-                  </li>
                   <?php
                   else: ?>
                      <li class="nav-item">
