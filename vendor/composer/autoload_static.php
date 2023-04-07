@@ -13,6 +13,7 @@ class ComposerStaticInit888f9f51458e8fa63a2be1af6210452d
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'ef65a1626449d89d0811cf9befce46f0' => __DIR__ . '/..' . '/illuminate/events/functions.php',
+        'a5d52d2a3a652a1d1f64989fdd1e8936' => __DIR__ . '/..' . '/bashdef/collect/src/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
@@ -54,6 +55,7 @@ class ComposerStaticInit888f9f51458e8fa63a2be1af6210452d
         ),
         'C' => 
         array (
+            'Collect\\' => 8,
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -86,6 +88,7 @@ class ComposerStaticInit888f9f51458e8fa63a2be1af6210452d
         'Src\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/Src',
+            1 => __DIR__ . '/..' . '/bashdef/validators/core/Src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -133,6 +136,10 @@ class ComposerStaticInit888f9f51458e8fa63a2be1af6210452d
         'Doctrine\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
+        'Collect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bashdef/collect/src',
         ),
         'Carbon\\' => 
         array (

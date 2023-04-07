@@ -1,6 +1,98 @@
 {
     "packages": [
         {
+            "name": "bashdef/collect",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bashdef/collect.git",
+                "reference": "e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bashdef/collect/zipball/e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4",
+                "reference": "e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 | ^8.0"
+            },
+            "time": "2023-04-07T16:50:57+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Collect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bashdef",
+                    "email": "themario717@gmail.com"
+                }
+            ],
+            "description": "Module for working with arrays",
+            "support": {
+                "issues": "https://github.com/bashdef/collect/issues",
+                "source": "https://github.com/bashdef/collect/tree/main"
+            },
+            "install-path": "../bashdef/collect"
+        },
+        {
+            "name": "bashdef/validators",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bashdef/validators.git",
+                "reference": "98a9ae94af9a6a763efbe534792b760fc59fafb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bashdef/validators/zipball/98a9ae94af9a6a763efbe534792b760fc59fafb4",
+                "reference": "98a9ae94af9a6a763efbe534792b760fc59fafb4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "10.x-dev",
+                "illuminate/events": "10.x-dev",
+                "php": "^7.4 | ^8.0"
+            },
+            "time": "2023-04-07T17:35:15+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Src\\": "core/Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bashdef"
+                }
+            ],
+            "description": "validators for projects",
+            "support": {
+                "issues": "https://github.com/bashdef/validators/issues",
+                "source": "https://github.com/bashdef/validators/tree/main"
+            },
+            "install-path": "../bashdef/validators"
+        },
+        {
             "name": "brick/math",
             "version": "v0.11.x-dev",
             "version_normalized": "0.11.9999999.9999999-dev",
