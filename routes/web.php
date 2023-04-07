@@ -8,4 +8,4 @@ Route::add(['GET', 'POST'], '/login', [Controller\Site::class, 'login'])->middle
 Route::add('GET', '/logout', [Controller\Site::class, 'logout'])->middleware('auth');
 Route::add('GET', '/rooms', [Controller\Site::class, 'rooms'])->middleware('auth');
 Route::add('GET', '/subunits', [Controller\Site::class, 'subunits'])->middleware('auth');
-Route::add('GET', '/subscribers', [Controller\Site::class, 'subscribers'])->middleware('auth');
+Route::add(['GET', 'POST'], '/subscribers', [Controller\Site::class, 'subscribers'])->middleware('auth');

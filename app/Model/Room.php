@@ -20,4 +20,8 @@ class Room extends Model
     {
         return $this->belongsTo(Telephone::class, 'telephone_id', 'telephone_id');
     }
+    public function room()
+    {
+        return $this->belongsTo(Room::class, 'room_id', 'room_id');
+    }
 }

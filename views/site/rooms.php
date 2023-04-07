@@ -14,7 +14,7 @@
       <?php
       foreach($rooms as $room) {
           echo '<tr>';
-          echo '<th scope="row">' . $room->id . '</th>';
+          echo '<th scope="row">' . $room->room_id . '</th>';
           echo '<td>' . $room->name_number . '</td>';
           echo '<td>' . $room->room_type->название . '</td>';
           echo '<td>' . $room->subunit->name . '</td>';
@@ -24,5 +24,4 @@
       ?>
     </tbody>
   </table>
-  <button class="btn btn-primary" style='margin-right: 755px;'>Добавить помещение</button>
 </div>
