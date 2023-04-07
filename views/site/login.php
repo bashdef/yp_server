@@ -6,6 +6,7 @@
     <?php
     if (!app()->auth::check()): ?>
     <form method='post'>
+        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
         <div class="mb-3">
             <label for="exampleInputLogin1" class="form-label">Логин</label>
             <input type="text" class="form-control" id="exampleInputLogin1" name='login'>

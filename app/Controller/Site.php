@@ -8,6 +8,7 @@ use Src\Auth\Auth;
 use Model\Room;
 use Model\Subunit;
 use Model\Subscribers;
+use Src\Validator\Validator;
 class Site
 {
     public function index(Request $request): string
@@ -22,10 +23,27 @@ class Site
     
     public function signup(Request $request): string
     {
-        if($request->method==='POST' && User::create($request->all())){
-            app()->route->redirect('/hello');
+        if ($request->method === 'POST') {
+
+            $validator = new Validator($request->all(), [
+                'name' => ['required'],
+                'login' => ['required', 'unique:users,login'],
+                'password' => ['required']
+            ], [
+                'required' => 'Поле :field пусто',
+                'unique' => 'Поле :field должно быть уникально'
+            ]);
+     
+            if($validator->fails()){
+                return new View('site.signup',
+                    ['message' => json_encode($validator->errors(), JSON_UNESCAPED_UNICODE)]);
+            }
+     
+            if (User::create($request->all())) {
+                app()->route->redirect('/login');
+            }
         }
-        return new View('site.signup');
+        return new View('site.signup');     
     }
 
     public function login(Request $request): string
