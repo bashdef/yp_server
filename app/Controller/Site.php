@@ -28,11 +28,13 @@ class Site
             $validator = new Validator($request->all(), [
                 'name' => ['required', 'english'],
                 'login' => ['required', 'unique:users,login', 'english'],
-                'password' => ['required', 'english']
+                'password' => ['required', 'english'],
+                'role_id' => ['role']
             ], [
                 'required' => 'Поле :field пусто',
                 'unique' => 'Поле :field должно быть уникально',
-                'english' => 'Поле :field не должно содержать русских символов'
+                'english' => 'Поле :field не должно содержать русских символов',
+                'role' => 'Поле :field не выбрано'
             ]);
      
             if($validator->fails()){

@@ -17,7 +17,7 @@
         </div>
         <div class="mb-3">
             <select class="form-select" name="role_id">
-                <option selected>Роль</option>
+                <option value="0"selected>Роль</option>
                 <?php if($_SESSION['role_id'] != 1):?>
                 <option value="1">Админ</option>
                 <?php endif; ?>

@@ -10,7 +10,8 @@ return [
     'validators' => [
         'required' => \Validators\RequireValidator::class,
         'unique' => \Validators\UniqueValidator::class,
-        'english' => \Validators\EnglishValidator::class
+        'english' => \Validators\EnglishValidator::class,
+        'role' => \Validators\RoleValidator::class
     ],
     'routeAppMiddleware' => [
         'trim' => \Middlewares\TrimMiddleware::class,
