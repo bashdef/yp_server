@@ -14,6 +14,10 @@ class ComposerStaticInit888f9f51458e8fa63a2be1af6210452d
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'ef65a1626449d89d0811cf9befce46f0' => __DIR__ . '/..' . '/illuminate/events/functions.php',
         'a5d52d2a3a652a1d1f64989fdd1e8936' => __DIR__ . '/..' . '/bashdef/collect/src/helpers.php',
+        'e797af5c34ecc6bf06c67ced7bce08b8' => __DIR__ . '/..' . '/bashdef/validators/Validators/EnglishValidator.php',
+        '205017d23d551bd818f2bf91e5a1e3e8' => __DIR__ . '/..' . '/bashdef/validators/Validators/RequireValidator.php',
+        '578055572ff3d6112628202bb1603ab7' => __DIR__ . '/..' . '/bashdef/validators/Validators/RoleValidator.php',
+        '2f9cf3e814173f05e279d09b229ce9ad' => __DIR__ . '/..' . '/bashdef/validators/Validators/UniqueValidator.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 

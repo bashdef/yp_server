@@ -7,18 +7,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bashdef/collect.git",
-                "reference": "e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4"
+                "reference": "512b6ccb30378b55eaf7042a9a3968d969371f0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bashdef/collect/zipball/e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4",
-                "reference": "e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4",
+                "url": "https://api.github.com/repos/bashdef/collect/zipball/512b6ccb30378b55eaf7042a9a3968d969371f0c",
+                "reference": "512b6ccb30378b55eaf7042a9a3968d969371f0c",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 | ^8.0"
             },
-            "time": "2023-04-07T16:50:57+00:00",
+            "time": "2023-04-08T02:18:11+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bashdef/validators.git",
-                "reference": "98a9ae94af9a6a763efbe534792b760fc59fafb4"
+                "reference": "4644993bd2caef61c9ec16cc8f220b1bdd233a7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bashdef/validators/zipball/98a9ae94af9a6a763efbe534792b760fc59fafb4",
-                "reference": "98a9ae94af9a6a763efbe534792b760fc59fafb4",
+                "url": "https://api.github.com/repos/bashdef/validators/zipball/4644993bd2caef61c9ec16cc8f220b1bdd233a7e",
+                "reference": "4644993bd2caef61c9ec16cc8f220b1bdd233a7e",
                 "shasum": ""
             },
             "require": {
@@ -67,11 +67,17 @@
                 "illuminate/events": "10.x-dev",
                 "php": "^7.4 | ^8.0"
             },
-            "time": "2023-04-07T17:35:15+00:00",
+            "time": "2023-04-08T02:39:31+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
             "autoload": {
+                "files": [
+                    "Validators/EnglishValidator.php",
+                    "Validators/RequireValidator.php",
+                    "Validators/RoleValidator.php",
+                    "Validators/UniqueValidator.php"
+                ],
                 "psr-4": {
                     "Src\\": "core/Src/"
                 }
@@ -749,12 +755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "17bc477bcee3bcc70129b8dd7064cb9de8405ee9"
+                "reference": "0ae4d2e6eef4c7202a64cacc24d8e86c67112fc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/17bc477bcee3bcc70129b8dd7064cb9de8405ee9",
-                "reference": "17bc477bcee3bcc70129b8dd7064cb9de8405ee9",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/0ae4d2e6eef4c7202a64cacc24d8e86c67112fc3",
+                "reference": "0ae4d2e6eef4c7202a64cacc24d8e86c67112fc3",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +788,7 @@
                 "symfony/var-dumper": "Required to use the dd function (^6.2).",
                 "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.4.1)."
             },
-            "time": "2023-04-02T16:23:05+00:00",
+            "time": "2023-04-07T13:47:09+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1284,12 +1290,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "ae58728630949fa443d94c394198bbf3d7bc7716"
+                "reference": "4eaba3573adcba5fec6589b806378a35cdcac9fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/ae58728630949fa443d94c394198bbf3d7bc7716",
-                "reference": "ae58728630949fa443d94c394198bbf3d7bc7716",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/4eaba3573adcba5fec6589b806378a35cdcac9fc",
+                "reference": "4eaba3573adcba5fec6589b806378a35cdcac9fc",
                 "shasum": ""
             },
             "require": {
@@ -1331,7 +1337,7 @@
                 "symfony/config": "",
                 "symfony/yaml": ""
             },
-            "time": "2023-03-31T09:18:46+00:00",
+            "time": "2023-04-04T08:45:02+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

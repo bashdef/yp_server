@@ -3,7 +3,7 @@
         'name' => 'bashdef/yp_server',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'd20716bec1443953f70dba79393d121c1b1d8b84',
+        'reference' => '3ba5749c1bbdadc950863dbd44291145a6625e6e',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'bashdef/collect' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e8bdb2c3d3ee2ae46b90e429fb083f5ade168ec4',
+            'reference' => '512b6ccb30378b55eaf7042a9a3968d969371f0c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../bashdef/collect',
             'aliases' => array(
@@ -24,7 +24,7 @@
         'bashdef/validators' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '98a9ae94af9a6a763efbe534792b760fc59fafb4',
+            'reference' => '4644993bd2caef61c9ec16cc8f220b1bdd233a7e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../bashdef/validators',
             'aliases' => array(
@@ -35,7 +35,7 @@
         'bashdef/yp_server' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'd20716bec1443953f70dba79393d121c1b1d8b84',
+            'reference' => '3ba5749c1bbdadc950863dbd44291145a6625e6e',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -143,7 +143,7 @@
         'illuminate/support' => array(
             'pretty_version' => '10.x-dev',
             'version' => '10.9999999.9999999.9999999-dev',
-            'reference' => '17bc477bcee3bcc70129b8dd7064cb9de8405ee9',
+            'reference' => '0ae4d2e6eef4c7202a64cacc24d8e86c67112fc3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/support',
             'aliases' => array(),
@@ -224,7 +224,7 @@
         'symfony/translation' => array(
             'pretty_version' => '6.3.x-dev',
             'version' => '6.3.9999999.9999999-dev',
-            'reference' => 'ae58728630949fa443d94c394198bbf3d7bc7716',
+            'reference' => '4eaba3573adcba5fec6589b806378a35cdcac9fc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation',
             'aliases' => array(),
