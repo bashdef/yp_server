@@ -1,5 +1,4 @@
 <?php
-use Validators;
 return [
     'auth' => \Src\Auth\Auth::class,
     'identity' => \Model\User::class,
@@ -9,10 +8,10 @@ return [
         'login' => \Middlewares\LoginMiddleware::class,
     ],
     'validators' => [
-        'required' => Validators\RequireValidator::class,
-        'unique' => Validators\UniqueValidator::class,
-        'english' => Validators\EnglishValidator::class,
-        'role' => Validators\RoleValidator::class
+        'required' => \Validators\RequireValidator::class,
+        'unique' => \Validators\UniqueValidator::class,
+        'english' => \Validators\EnglishValidator::class,
+        'role' => \Validators\RoleValidator::class
     ],
     'routeAppMiddleware' => [
         'trim' => \Middlewares\TrimMiddleware::class,

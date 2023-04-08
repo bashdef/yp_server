@@ -15,7 +15,8 @@
         "illuminate/events": "10.x-dev",
         "nikic/fast-route": "^2.0@dev",
         "bashdef/collect": "dev-main",
-        "bashdef/validators": "dev-main"
+        "bashdef/validators": "dev-main",
+        "phpunit/phpunit": "^10.1@dev"
     },
     "autoload": {
         "psr-4": {
